@@ -70,7 +70,7 @@ updateTotalAmount();
 
 //이벤트
 cartList.addEventListener("click", e => {
-  const cartItem = e.target.closest(".cart-Item");
+  const cartItem = e.target.closest(".cart-item");
   if (!cartItem) return;
   const id = Number(cartItem.dataset.id);
   const targetItem = cart.find(item => item.id === id);
@@ -101,3 +101,6 @@ cartList.addEventListener("click", e => {
     return;
   }
 });
+
+function renderCart() {}
+renderCart();
