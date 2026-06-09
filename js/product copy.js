@@ -61,8 +61,27 @@ function createContent(data) {
 //상품 상세 tab
 const detail_tab_menus = document.querySelectorAll(".detail-tabs a");
 const detail_tab_contents = document.querySelectorAll(
-  ".tab-content .detail-content",
+  ".tab-content > .detail-content",
 );
+
+// detail_tab_menus.forEach(menu => {
+//   menu.addEventListener("click", e => {
+//     e.preventDefault();
+
+//     const target = menu.getAttribute("href");
+
+//     detail_tab_contents.forEach(content => {
+//       content.classList.remove("active");
+//     });
+
+//     document.querySelector(target).classList.add("active");
+
+//     detail_tab_menus.forEach(m => {
+//       m.classList.remove("active");
+//     });
+//     menu.classList.add("active");
+//   });
+// });
 
 detail_tab_menus.forEach(m => {
   m.addEventListener("click", e => {
